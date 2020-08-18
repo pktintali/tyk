@@ -13,6 +13,14 @@ margin-top:10px;
 .w3-section h2{
 padding:30px;
 }
-.overlay{
-
+.for-hide{
+display:none;
+}
+.my-loading{
+ width: 50%;
+ height: 50%;
+ overflow: auto;
+ margin: auto;
+ position: absolute;
+ top: 0; left: 0; bottom: 0; right: 0;
 }
