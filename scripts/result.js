@@ -27,28 +27,28 @@ request.onload = function () {
  }});
 var quote = document.getElementById("rq");
 if(marks>data.length-2){
-quote.textContent = "Outstanding 🙏🙏🙏 Keep it up";
+quote.textContent = "Outstanding 👌👌👌 Keep it up";
 }
-else if(marks>(data.length/2)+(data.length/4)){
-quote.textContent = "You are doing great 👍 But try some more in  "+subject;
+else if(marks>((data.length/2)+(data.length/4))){
+quote.textContent = "You are doing great 👍👍 But try to score more in  "+subject;
 }
 else if(marks>data.length/2){
-quote.textContent ="Your performance is above average 🤗 But you need to work little more in "+subject;
+quote.textContent ="Your performance is above average 🤗 You need to work a little more in "+subject;
 }
 else if(marks>data.length/4){
 quote.textContent = "You need to work hard 🤨 in "+subject+" You are not getting enough marks";
 }
 else if(marks>data.length/10){
-quote.textContent = "Why So poor performance 😓 Focous some more in "+subject;
+quote.textContent = "Why so poor performance 😓 Try to focus more in "+subject;
 }
-else if(marks>0&&marks<data.length/10){
+else if(marks>0&&marks<=data.length/10){
 quote.textContent = "What are you doing 🤔 in "+subject+" Why so less marks";
 }
 else if(marks==0){
-quote.textContent = "🙄🙄🙄";
+quote.textContent = "🙄🙄🙄 \n What have you done,didn't you know any of these?";
 }
 else{
-quote.textContent = "BINOD";
+quote.textContent = "";
 }
 document.getElementById("id5").innerHTML="Your Score is";
   document.getElementById("rm").innerHTML
