@@ -24,3 +24,13 @@ display:none;
  position: absolute;
  top: 0; left: 0; bottom: 0; right: 0;
 }
+.my-popup{
+ //z-index:9;
+ background:rgba(10,10,10,0.8);
+ width: auto;
+ height: auto;
+ overflow: auto;
+ margin: auto;
+ position:absolute;
+ top: 0; left: 0; bottom: 0; right: 0;
+}

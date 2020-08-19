@@ -1,9 +1,12 @@
-
 const container = document.getElementById('scaffold');
 var loading = document.getElementById('loader');
 var mainpage = document.getElementById('mainpage');
 var request = new XMLHttpRequest();
-request.open('GET', 'https://api.steinhq.com/v1/storages/5f37792b5d3cdc44fcd7d30b/cd', true);
+var app = document.getElementById('root');
+var subject = sessionStorage.getItem("subject");
+console.log(subject);
+
+request.open('GET', 'https://api.steinhq.com/v1/storages/5f37792b5d3cdc44fcd7d30b/'+subject, true);
 request.onload = function () {
   loading.style.display = "none";
   mainpage.style.display = "block";
@@ -58,9 +61,8 @@ request.onload = function () {
     });
   } else {
     const errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Gah, it's not working!`;
+    errorMessage.textContent = 'Gah, its not working!';
     app.appendChild(errorMessage);
   }
-}
-
+ }
 request.send();

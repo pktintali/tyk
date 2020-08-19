@@ -20,27 +20,13 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 
-//getting the resultt
-function getResult(){
-var marks = 0;
-var ans = ['val2','val3','val1','val1','val2'];
- var form = document.getElementsByTagName('form');
- for(i =0;i<form.length;i++){
- 
-     var ele = document.getElementsByName('op'+i); 
-     
-     for(j = 0; j < ele.length; j++) { 
-     
-       if(ele[j].checked){ 
-         
-         if(ele[j].value==ans[i]){
-          marks=marks+1;
-         } 
-     
-     } 
- 
- }
+function go_back(){
+window.history.back();
 }
-document.getElementById("result").innerHTML
-       = marks;
+
+function displayAns(){
+saveAns();
+document.getElementById('mainpage').style.display = 'none';
+document.getElementById('id3').style.display = 'block';
 }
+

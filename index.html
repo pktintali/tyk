@@ -92,13 +92,16 @@
     </div>
      <div class ="w3-container">
         <div class ="w3-container w3-third">
-          <a href ="pages/testpage.html" class ="w3-button w3-border mymargin w3-block">Compiler Design</a>
+          <a onclick = "openCD();" href ="pages/testpage.html" class ="w3-button w3-border mymargin w3-block">Compiler Design</a>
         </div>
         <div class ="w3-container w3-third">
-          <a class ="w3-button w3-border mymargin w3-block">Machine Learning</a>
+          <a onclick ="openML();"  class ="w3-button w3-border mymargin w3-block">Machine Learning</a>
         </div>
         <div class ="w3-container w3-third">
-          <a class ="w3-button w3-border mymargin w3-block">Data Analytics</a>
+          <a onclick ="openDA();" href ="pages/testpage.html" class ="w3-button w3-border mymargin w3-block">Data Analytics</a>
+        </div>
+        <div class ="w3-container w3-third">
+          <a onclick ="openDAA();" class ="w3-button w3-border mymargin w3-block">DAA</a>
         </div>
         <br>
         <div class ="w3-container w3-center">
@@ -111,5 +114,25 @@
 </div>
 
 </body>
-<script type="text/javascript" src = "script.js"></script>
+<script type="text/javascript">
+function openCD(){
+var subject = 'cd';
+sessionStorage.setItem("subject", subject);
+}
+function openDA(){
+var subject = 'da';
+sessionStorage.setItem("subject", subject);
+}
+
+function openML(){
+var subject = 'ml';
+sessionStorage.setItem("subject", subject);
+}
+
+function openDAA(){
+var subject = 'daa';
+sessionStorage.setItem("subject", subject);
+}
+</script>
+<script type="text/javascript" src ="script.js"></script>
 </html>

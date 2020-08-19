@@ -78,87 +78,42 @@
 <div class="w3-main" style="margin-left:300px;margin-top:53px;">
   
   <!--Questions-->
-  <div id ="scaffold"> 
-  <!--<form class="w3-container w3-card">
-   <h3>This is sample question 1</h3>
-   <p>
-   <input class="w3-radio" type="radio" name="op0" value="val1">
-   <label>Option 1</label></p>
-   <p>
-   <input class="w3-radio" type="radio" name="op0" value="val2">
-   <label>Option 2</label></p>
-   <p>
-   <input class="w3-radio" type="radio" name="op0" value="val3">
-   <label>Option 3</label></p>
- </form>
- <br>
- <form class="w3-container w3-card">
- <h3>This is sample question 2</h3>
- <p>
- <input class="w3-radio" type="radio" name="op0" value="val1">
- <label>Option 1</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op0" value="val2">
- <label>Option 2</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op0" value="val3">
- <label>Option 3</label></p>
- </form>
- <br>
- <form class="w3-container w3-card">
- <h3>This is sample question 3</h3>
- <p>
- <input class="w3-radio" type="radio" name="op2" value="val1">
- <label>Option 1</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op2" value="val2">
- <label>Option 2</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op2" value="val3">
- <label>Option 3</label></p>
- </form>
- <br>
- <form class="w3-container w3-card">
- <h3>This is sample question 4</h3>
- <p>
- <input class="w3-radio" type="radio" name="op3" value="val1">
- <label>Option 1</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op3" value="val2">
- <label>Option 2</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op3" value="val3">
- <label>Option 3</label></p>
- </form>
- <br>
- <form class="w3-container w3-card">
- <h3>This is sample question 5</h3>
- <p>
- <input class="w3-radio" type="radio" name="op4" value="val1">
- <label>Option 1</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op4" value="val2">
- <label>Option 2</label></p>
- <p>
- <input class="w3-radio" type="radio" name="op4" value="val3">
- <label>Option 3</label></p>
- </form>-->
+ <div id ="scaffold"> 
  </div>
  
  <br>
+ <br>
  <div class ="w3-card w3-margin">
-   <a href="../index.html"  class ="w3-button w3-border w3-left">Cancel</a>
-   <button onclick ="getResult();"class ="w3-button w3-border w3-right">Submit</button>
+   <a onclick ="go_back();" class ="w3-button w3-border w3-left">Cancel</a>
+   <a onclick ="displayAns();" class ="w3-button w3-border w3-right">Submit</a>
  </div>
  <br>
- <div class ="w3-container">
-   <h3>Your Marks is <span id ="result"></span></h3>
- </div>
+ <br>
   <!-- End page content -->
 </div>
 <br><br>
 </div>
+
+<div id ="id3" class ="w3-modal">
+    <div class ="my-popup w3-modal-content w3-container w3-animate-zoom w3-card-4">
+      <div class ="w3-container w3-text-white">
+        <div class ="w3-panel w3-mobile">
+          <h4 class ="w3-center" id ="rq">Loading....</h4>
+          <h3 class ="w3-center" id ="id5"></h3>
+          <h1 class ="w3-center" id ="rm"> </h1>
+        </div>
+        <br><br>
+        <div class ="w3-container">
+           <a class ="w3-margin w3-button w3-display-bottomleft w3-border">Review</a>
+           <a href="../index.html"  class ="w3-margin w3-button w3-display-bottomright w3-border">Close</a>
+        </div>
+        <br>
+      </div>
+    </div>
+</div>
+
 </body>
-<script type="text/javascript" src = "../script.js" defer></script>
 <script type="text/javascript" src ="../scripts/questionbank.js"></script>
+<script type="text/javascript" src ="../script.js"></script>
+<script type="text/javascript" src ="../scripts/result.js"></script>
 </html>
